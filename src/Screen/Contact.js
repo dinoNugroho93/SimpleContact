@@ -171,7 +171,7 @@ const Contact = ({ route, navigation }) => {
                                         width: null,
                                         height: null,
                                     }}
-                                    source={{ uri:propsPhoto}} 
+                                    source={{ uri:'https://vignette1.wikia.nocookie.net/lotr/images/6/68/Bilbo_baggins.jpg/revision/latest?cb=20130202022550'}} 
                                     size={20}/>
                             </View>
                         </View>

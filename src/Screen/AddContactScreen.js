@@ -59,10 +59,17 @@ const AddContactScreen = ({ navigation }) => {
     }, [navigation])
 
     useEffect(() => {
+        let coba = task1()
+        console.log(coba)
         console.log("called");
         getDataContact()
     }, [])
 
+    function task1(){
+        return{
+            test:'succes'
+        }
+    }
     React.useEffect(
         () => navigation.addListener('focus', () =>  getDataContact()),
         []
@@ -216,7 +223,9 @@ const AddContactScreen = ({ navigation }) => {
                         <View style={styles.cirlcle}>
                             <Image
                                 style={styles.cirlcle}
-                                source={{uri:item.photo}}
+                                source={{
+                                    uri: 'https://vignette1.wikia.nocookie.net/lotr/images/6/68/Bilbo_baggins.jpg/revision/latest?cb=20130202022550'
+                                }}
                                 resizeMode='cover'
                                 size={20}
                             />
